@@ -3,7 +3,7 @@ import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Stats from '~/components/widgets/Stats.astro';
-import Steps2 from '~/components/widgets/Steps2.astro';
+// import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
@@ -17,7 +17,7 @@ const metadata = {
   <Hero
     tagline="Tentang Kami"
     image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/antrian.jpg',
       alt: 'Kantor Alat Antrian',
     }}
   >
@@ -73,58 +73,21 @@ const metadata = {
     ]}
   />
 
-  <!-- Features3 Widget ************** -->
+  <!-- Features2 Widget ************** -->
 
-  <Features3
-    columns={3}
-    isAfterContent={true}
-    items={[
-      {
-        title: 'E-commerce',
-        description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Blog',
-        description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Business',
-        description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Medical',
-        description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
-        icon: 'tabler:template',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
-    }}
-  />
+  <Features2
+    title="Sekilas Tentang Legalitas Perusahaan Kami"
+    subtitle="PT. Cendana Teknika Utama berdiri tahun 1998 di Jawa Timur, dikukuhkan dengan Akta Pendirian Perusahaan di hadapan notaris Faisal A. Waber, SH. Penandatanganan oleh pejabat yang ditunjuk di hadapan notaris Faisal A. Waber, SH dilakukan pada tanggal 12 Agustus 1998."
+    tagline="PT. Cendana Teknika Utama"
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
 
   <!-- Steps2 Widget ****************** -->
 
-  <Steps2
+  <!-- <Steps2
     title="Sejarah Perjalanan"
     subtitle="Dari sebuah startup kecil hingga menjadi vendor kepercayaan ratusan RSUD dan RS Swasta."
     items={[
@@ -148,24 +111,20 @@ const metadata = {
           'Memiliki jaringan teknisi di berbagai kota besar di Indonesia untuk layanan purna jual yang lebih baik.',
       },
     ]}
-  />
+  /> -->
 
   <Features2
     title="Kantor Layanan"
     tagline="Temukan Kami"
-    columns={3}
+    columns={2}
     items={[
       {
-        title: 'Jakarta (Pusat)',
-        description: 'Jl. Jendral Sudirman No. Kav 52, Jakarta Selatan',
+        title: 'Malang (Pusat)',
+        description: 'Ruko Permata Griyashanta Blok NR. 24 25, Jl. Soekarno-Hatta, Malang, 65142',
       },
       {
-        title: 'Surabaya',
-        description: 'Jl. Raya Darmo No. 12, Surabaya',
-      },
-      {
-        title: 'Semarang',
-        description: 'Jl. Pemuda No. 150, Semarang',
+        title: 'Depok',
+        description: 'Jl. Raya PLN No. 95 Kel. Gandul, Kec. Cinere, Kota Depok, Provinsi Jawa Barat 16514',
       },
     ]}
   />
