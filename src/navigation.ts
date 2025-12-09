@@ -82,7 +82,7 @@ export const footerData = {
     {
       title: 'Microsite Lain',
       links: [
-        { text: 'Pelayanan Publik', href: '#' },
+        { text: 'Pelayanan Publik', href: 'https://alatantrian-publik.vercel.app/' },
         { text: 'Perbankan', href: '#' },
         { text: 'Pendidikan', href: '#' },
       ],
